@@ -6,6 +6,7 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/background"
@@ -30,81 +31,101 @@
     <EditText
         android:id="@+id/editTextTextPassword2"
         style="?attr/textInputFilledStyle"
-        android:padding="10dp"
-        android:layout_width="295dp"
-        android:layout_height="39dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/rounded"
         android:drawableLeft="@drawable/baseline_lock_24"
         android:ems="10"
         android:fontFamily="sans-serif"
         android:inputType="textPassword"
-        android:background="@drawable/rounded"
+        android:padding="12dp"
         android:text="Password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="338dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
 
     <TextView
         android:id="@+id/masuk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="MASUK"
-        android:textColor="@color/pink"
+        android:textColor="@color/pinky"
         android:textSize="20sp"
-        app:shapeAppearance="@style/cornerRadius"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="212dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:shapeAppearance="@style/cornerRadius" />
 
     <EditText
         android:id="@+id/editTextText4"
         style="?attr/textInputFilledStyle"
-        android:layout_width="295dp"
-        android:layout_height="39dp"
-        android:drawableLeft="@drawable/baseline_format_list_bulleted_24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded"
+        android:drawableStart="@drawable/baseline_format_list_bulleted_24"
         android:ems="10"
         android:fontFamily="sans-serif"
         android:inputType="text"
-        android:padding="10dp"
+        android:padding="12dp"
         android:text="Peserta"
-        android:background="@drawable/rounded"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="405dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="136dp"
-        android:layout_height="47dp"
-        android:backgroundTint="@color/pink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/pinky"
         android:fontFamily="@font/poppins_semibold"
         android:text="MASUK"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="525dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="455dp"
+        android:layout_marginEnd="220dp"
         android:text="Simpan Info"
-        tools:layout_editor_absoluteX="58dp"
-        tools:layout_editor_absoluteY="444dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
 
     <EditText
         android:id="@+id/editTextText"
-        android:layout_width="295dp"
         style="?attr/textInputFilledStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/rounded"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:padding="10dp"
         android:drawableLeft="@drawable/baseline_person_24"
+        android:ems="10"
         android:inputType="text"
+        android:padding="12dp"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="273dp" />
+        app:layout_constraintTop_toBottomOf="@+id/masuk" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

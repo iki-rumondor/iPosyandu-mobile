@@ -12,10 +12,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-
     </style>
 <style name="cornerRadius" parent="">
-    <item name="cornerSize">30%</item>
+    <item name="cornerSize">25%</item>
 </style>
     <style name="RoundedEditText">
         <item name="android:background">@drawable/rounded</item>
