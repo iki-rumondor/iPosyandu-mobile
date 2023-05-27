@@ -16,8 +16,12 @@
 <style name="cornerRadius" parent="">
     <item name="cornerSize">25%</item>
 </style>
+    <style name="ButtonRadius" parent="">
+        <item name="cornerSize">100%</item>
+    </style>
     <style name="RoundedEditText">
         <item name="android:background">@drawable/rounded</item>
     </style>
+
 
 </resources>
