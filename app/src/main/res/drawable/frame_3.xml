@@ -18,7 +18,7 @@
         android:fillAlpha="0.6"/>
     <path
         android:pathData="M22,42.5a31,27.5 0,1 0,62 0a31,27.5 0,1 0,-62 0z"
-        android:fillColor="url(#pattern0)"/>
+        android:fillColor="#000000"/>
     <path
         android:pathData="M141.5,161L157.5,161A2.5,2.5 0,0 1,160 163.5L160,163.5A2.5,2.5 0,0 1,157.5 166L141.5,166A2.5,2.5 0,0 1,139 163.5L139,163.5A2.5,2.5 0,0 1,141.5 161z"
         android:fillColor="#FF92A4"/>

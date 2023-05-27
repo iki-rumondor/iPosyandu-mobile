@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home" />
+    <item
+        android:id="@+id/notifikasi"
+        android:title="Notifikasi"
+        android:icon="@drawable/notification" />
+    <item
+        android:id="@+id/scan"
+        android:title="Scan"
+        android:icon="@drawable/baseline_qr_code_scanner_24" />
+    <item
+        android:id="@+id/riwayat"
+        android:title="Riwayat"
+        android:icon="@drawable/riwayat" />
+    <item
+        android:id="@+id/profil"
+        android:title="Profil"
+        android:icon="@drawable/baseline_person_24" />
+</menu>
