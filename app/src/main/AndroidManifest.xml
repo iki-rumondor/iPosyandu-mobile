@@ -12,6 +12,9 @@
         android:theme="@style/Theme.IPosyandu"
         tools:targetApi="31">
         <activity
+            android:name=".data_obat"
+            android:exported="false" />
+        <activity
             android:name=".Pelayanan_kesehatan"
             android:exported="false" />
         <activity
