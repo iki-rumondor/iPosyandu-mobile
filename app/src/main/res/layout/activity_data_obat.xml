@@ -150,4 +150,15 @@
         app:shapeAppearance="@style/cornerRadius"
         tools:layout_editor_absoluteX="285dp"
         tools:layout_editor_absoluteY="633dp" />
+
+    <EditText
+        android:id="@+id/editTextText18"
+        android:layout_width="339dp"
+        android:layout_height="149dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="105dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

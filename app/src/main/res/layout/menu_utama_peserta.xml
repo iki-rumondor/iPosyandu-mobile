@@ -39,6 +39,7 @@
         android:fontFamily="@font/poppins_semibold"
         android:text="Hallo, "
         android:textSize="12sp"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -49,6 +50,7 @@
         android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Nama Peserta"
+        android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/textView2"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -66,40 +68,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager2"
-        android:layout_width="379dp"
-        android:layout_height="203dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="com.example.i_posyandu.MapsFragment"
-        android:layout_width="379dp"
-        android:layout_height="205dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="43dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Peta Persebaran Posyandu"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPager2" />
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/pinky"
+        app:backgroundTint="@color/pinky"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -107,13 +84,51 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-    <LinearLayout
-        android:layout_width="379dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="351dp"
+        android:layout_height="197dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPager2"></LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/foto1" />
+
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="355dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="32dp"
+        android:text="Jadwal Posyandu"
+        app:cornerRadius="25dp"
+        android:drawableLeft="@drawable/icon1"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity=""
+        app:iconTint="#ECECEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/pink_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="355dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/pink_btn"
+        android:drawableLeft="@drawable/icon2"
+        android:gravity=""
+        android:text="Riwayat Pemeriksaan"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        app:cornerRadius="25dp"
+        app:iconTint="#ECECEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,16 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/relativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/background"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <!-- Konten layout lainnya -->
-
-    </RelativeLayout>
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="660dp"
+        android:layout_height="921dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/background" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -62,28 +61,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:shapeAppearance="@style/cornerRadius" />
 
-    <EditText
-        android:id="@+id/editTextText4"
-        style="?attr/textInputFilledStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/rounded"
-        android:drawableStart="@drawable/baseline_format_list_bulleted_24"
-        android:ems="10"
-        android:fontFamily="sans-serif"
-        android:inputType="text"
-        android:padding="12dp"
-        android:text="Peserta"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
-
     <Button
         android:id="@+id/button_obat"
         android:layout_width="wrap_content"
@@ -103,12 +80,12 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="455dp"
         android:layout_marginEnd="220dp"
         android:text="Simpan Info"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/relativeLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
 
     <EditText
         android:id="@+id/editTextText"
@@ -128,5 +105,22 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/masuk" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="331dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/abu"
+        android:drawableLeft="@drawable/baseline_format_list_bulleted_24"
+        android:gravity=""
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:cornerRadius="15dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
