@@ -94,41 +94,62 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@drawable/foto1" />
 
-
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="355dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="32dp"
-        android:text="Jadwal Posyandu"
-        app:cornerRadius="25dp"
-        android:drawableLeft="@drawable/icon1"
-        android:textColor="@color/black"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity=""
-        app:iconTint="#ECECEC"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="@color/pink_btn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="355dp"
-        android:layout_height="112dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="@color/pink_btn"
-        android:drawableLeft="@drawable/icon2"
-        android:gravity=""
-        android:text="Riwayat Pemeriksaan"
-        android:fontFamily="@font/poppins_semibold"
-        android:textColor="@color/black"
-        app:cornerRadius="25dp"
-        app:iconTint="#ECECEC"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="414dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rectangle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView12">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="PILIH AKTIVITAS"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="381dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/pink_btn"
+            android:drawableLeft="@drawable/icon1"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity=""
+            android:text="Jadwal Posyandu"
+            android:textColor="@color/black"
+            app:cornerRadius="25dp"
+            app:iconTint="#ECECEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="376dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/pink_btn"
+            android:drawableLeft="@drawable/icon2"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity=""
+            android:text="Riwayat Pemeriksaan"
+            android:textColor="@color/black"
+            app:cornerRadius="25dp"
+            app:iconTint="#ECECEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

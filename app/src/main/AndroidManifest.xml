@@ -2,9 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +19,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IPosyandu"
         tools:targetApi="31">
+        <activity
+            android:name=".keluar_peserta"
+            android:exported="false" />
+        <activity
+            android:name=".lupa_password_peserta"
+            android:exported="false" />
+        <activity
+            android:name=".ganti_password_peserta"
+            android:exported="false" />
+        <activity
+            android:name=".keamanan_akun"
+            android:exported="false" />
+        <activity
+            android:name=".notifikasi_peserta"
+            android:exported="false" />
+        <activity
+            android:name=".hasil_diagnosis"
+            android:exported="false" />
+        <activity
+            android:name=".jadwal_posyandu_hari_ini"
+            android:exported="false" />
+        <activity
+            android:name=".Catatan_hasil_imunisasi"
+            android:exported="false" />
+        <activity
+            android:name=".Catatan_pemberian_kb"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Hasil_catatan_obat"
+            android:exported="false" />
         <activity
             android:name=".HomeKaderActivity"
             android:exported="false" />
@@ -49,6 +83,25 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity
+            android:name="info.vividcode.android.zxing.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
