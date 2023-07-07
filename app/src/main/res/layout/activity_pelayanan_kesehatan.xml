@@ -8,133 +8,132 @@
     tools:context=".Pelayanan_kesehatan"
     >
 
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="185dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="16dp"
+        android:drawableBottom="@drawable/logo_vitamin"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity=""
+        android:text="Obat &amp;\nVitamin"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:backgroundTint="#FFC5CF"
+        app:cornerRadius="25dp"
+        app:iconTint="#ECECEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView93" />
+
     <TextView
         android:id="@+id/textView19"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/righteous"
         android:paddingStart="20dp"
         android:paddingTop="27dp"
         android:text="i-Posyandu"
         android:textColor="#FF92A4"
         android:textSize="25dp"
-        tools:layout_editor_absoluteX="-64dp"
-        tools:layout_editor_absoluteY="-16dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="21dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
-        app:srcCompat="@drawable/frame_3" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView92"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="76dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Halo"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Silahkan "
+        android:textSize="20sp"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView19" />
-
-    <ImageButton
-        android:layout_width="0dp"
-        android:layout_height="87dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="2dp"
-        android:src="@drawable/pelayanan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="304dp"
-        android:fontFamily="@font/poppins"
-        android:text="Lokasi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="0dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="2dp"
-        android:src="@drawable/pencatatan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="76dp"
-        android:layout_marginEnd="72dp"
-        android:fontFamily="@font/poppins_medium"
-        android:text="Nama Kader"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toStartOf="@+id/textView19"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="@+id/textView19" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="0dp"
-        android:layout_height="87dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="2dp"
-        android:src="@drawable/absnsi"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:srcCompat="@drawable/location" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="279dp"
+        android:layout_marginEnd="164dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Pilih Tindakan"
         android:textColor="@color/pinky"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView92"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="@+id/textView92"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView93"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Di Bawah ini !"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView92" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="185dp"
+        android:layout_height="194dp"
+        android:drawableBottom="@drawable/logo_kb"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Keluarga Berencana (KB)"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:backgroundTint="#FFC5CF"
+        app:cornerRadius="25dp"
+        app:iconTint="#ECECEC"
+        app:layout_constraintBottom_toBottomOf="@+id/button14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toEndOf="@+id/button14"
+        app:layout_constraintTop_toTopOf="@+id/button14" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="379dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="12dp"
+        android:drawableRight="@drawable/logo_imunisasi"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:text="Imunisasi"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="#FFC5CF"
+        app:cornerRadius="25dp"
+        app:iconTint="#ECECEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="0dp"
+        app:itemIconTint= "@color/white"
+        android:background= "@color/pinky"
+        app:itemTextColor = "@color/white"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

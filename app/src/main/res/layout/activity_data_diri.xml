@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".data_diri">
+
+  <ImageView
+      android:id="@+id/imageView4"
+      android:layout_width="1681dp"
+      android:layout_height="937dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/bgtop" />
+
+  <TextView
+      android:id="@+id/textView18"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="44dp"
+      android:fontFamily="@font/poppins"
+      android:text="i-Posyandu"
+      android:textSize="24sp"
+      android:textColor="@color/pinky"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+  <ImageView
+      android:id="@+id/imageView7"
+      android:layout_width="30dp"
+      android:layout_height="26dp"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="8dp"
+      app:layout_constraintEnd_toStartOf="@+id/textView20"
+      app:layout_constraintHorizontal_bias="0.144"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView18"
+      app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+  <TextView
+      android:id="@+id/textView20"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:fontFamily="@font/poppins_semibold"
+      android:text="Data Diri"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.148"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+  <TextView
+      android:id="@+id/textView43"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="32dp"
+      android:fontFamily="@font/poppins_medium"
+      android:text="Nama Lengkap"
+      android:textColor="@color/black"
+      android:textSize="13sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+  <EditText
+      android:id="@+id/editTextText8"
+      android:layout_width="370dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="8dp"
+      android:ems="10"
+      android:inputType="text"
+      android:backgroundTint="#BFBFBF"
+      android:background="@drawable/rectangle"
+      android:hint="   Nama Lengkap"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.487"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+  <TextView
+      android:id="@+id/textView80"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="16dp"
+      android:text="Umur"
+      android:textColor="@color/black"
+      android:fontFamily="@font/poppins_medium"
+      android:textSize="13sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextText8" />
+
+  <EditText
+      android:id="@+id/editTextText9"
+      android:layout_width="370dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="8dp"
+      android:ems="10"
+      android:inputType="text"
+      android:background="@drawable/rectangle"
+      android:hint="   Umur"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.487"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView80" />
+
+  <TextView
+      android:id="@+id/textView90"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="16dp"
+      android:text="Status"
+      android:textColor="@color/black"
+      android:fontFamily="@font/poppins_medium"
+      android:textSize="13sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
+
+  <EditText
+      android:id="@+id/editTextText10"
+      android:layout_width="370dp"
+      android:layout_height="55dp"
+      android:layout_marginTop="8dp"
+      android:ems="10"
+      android:inputType="text"
+      android:background="@drawable/rectangle"
+      android:hint="   Status"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.487"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView90" />
+
+  <Button
+      android:id="@+id/button13"
+      android:layout_width="140dp"
+      android:layout_height="58dp"
+      android:layout_marginTop="48dp"
+      android:backgroundTint="@color/pink_btn"
+      android:text="Oke"
+      android:fontFamily="@font/poppins_semibold"
+      app:cornerRadius="25dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/editTextText10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
